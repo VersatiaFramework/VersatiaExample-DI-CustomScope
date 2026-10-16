@@ -3,15 +3,15 @@ package com.github.marcoral.versatia.example.customscope
 import com.github.marcoral.versatia.di.LocalBean
 
 @Service
-class UserService {
+class UserService(plugin: CustomScopePlugin) {
     init {
-        log("created through @Service")
+        plugin.logger.info("UserService created through @Service")
     }
 }
 
 @LocalBean
-class Report(service: UserService) {
+class Report(service: UserService, plugin: CustomScopePlugin) {
     init {
-        log("got the ${service.javaClass.simpleName}")
+        plugin.logger.info("Report got the ${service.javaClass.simpleName}")
     }
 }

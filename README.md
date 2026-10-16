@@ -1,18 +1,17 @@
-    # VersatiaExample-DI-CustomScope
+# VersatiaExample-DI-CustomScope
 
-    A scope annotation of your own, `@Service`, that inherits `@LocalBean`: one declaration, no runtime code.
+A scope annotation of your own, `@Service`, that inherits `@LocalBean`: one declaration, no runtime code.
 
-    Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Defining your own scope](https://versatiaframework.github.io/VersatiaDocs/docs/internals/enhancements#defining-your-own-scope).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Defining your own scope](https://versatiaframework.github.io/VersatiaDocs/docs/internals/enhancements#defining-your-own-scope).
 
-    **Start with** [`Service.kt`](src/main/kotlin/com/github/marcoral/versatia/example/customscope/Service.kt).
+**Start with** [`Service.kt`](src/main/kotlin/com/github/marcoral/versatia/example/customscope/Service.kt).
 
-    ## What the log shows
+## What the log shows
 
-    ```
-    [UserService] created through @Service
-[Report] got the UserService
-    ```
-
+```
+[VersatiaExample-DI-CustomScope] UserService created through @Service
+[VersatiaExample-DI-CustomScope] Report got the UserService
+```
 
 ## Things to try
 
@@ -23,8 +22,10 @@
 
 ## Building
 
-Requires JDK 21 and VersatiaAPI in your local Maven repository (`./gradlew publishToMavenLocal`
-in its checkout); running it requires a Paper 1.21.4 server with VersatiaCore installed.
+Requires JDK 21 and VersatiaStarter with what it exports (VersatiaAPI, the module APIs) in your
+local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
+[Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
+running it requires a Paper 1.21.4 server with VersatiaCore installed.
 
 ```bash
 ./gradlew build
