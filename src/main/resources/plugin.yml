@@ -1,6 +1,6 @@
 name: VersatiaExample-DI-CustomScope
 version: '${version}'
-main: com.github.marcoral.versatia.example.customscope.CustomScopePlugin
+main: dev.versatia.example.customscope.CustomScopePlugin
 api-version: '1.21'
 author: Versatia
 description: A plugin-defined bean scope.

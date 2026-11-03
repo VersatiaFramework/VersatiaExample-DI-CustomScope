@@ -2,9 +2,9 @@
 
 A scope annotation of your own, `@Service`, that inherits `@LocalBean`: one declaration, no runtime code.
 
-Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Defining your own scope](https://versatiaframework.github.io/VersatiaDocs/docs/internals/enhancements#defining-your-own-scope).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Defining your own scope](https://versatia.dev/docs/internals/enhancements#defining-your-own-scope).
 
-**Start with** [`Service.kt`](src/main/kotlin/com/github/marcoral/versatia/example/customscope/Service.kt).
+**Start with** [`Service.kt`](src/main/kotlin/dev/versatia/example/customscope/Service.kt).
 
 ## What the log shows
 
@@ -24,7 +24,7 @@ Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExa
 
 Requires JDK 21 and VersatiaAPI in your
 local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
-[Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
+[Building the framework](https://versatia.dev/docs/contributing/building));
 running it requires a Paper 1.21.4 server with VersatiaCore installed.
 
 ```bash

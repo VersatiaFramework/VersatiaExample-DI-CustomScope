@@ -1,6 +1,6 @@
-package com.github.marcoral.versatia.example.customscope
+package dev.versatia.example.customscope
 
-import com.github.marcoral.versatia.di.LocalBean
+import dev.versatia.di.LocalBean
 import java.util.logging.Logger
 
 @Service
