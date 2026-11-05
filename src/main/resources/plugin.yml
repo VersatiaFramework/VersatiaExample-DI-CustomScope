@@ -1,7 +1,7 @@
 name: VersatiaExample-DI-CustomScope
 version: '${version}'
 main: dev.versatia.example.customscope.CustomScopePlugin
-api-version: '1.21'
+api-version: '26.3'
 author: Versatia
 description: A plugin-defined bean scope.
 # Kotlin classes come from VersatiaCore's class loader; do not list kotlin-stdlib here
